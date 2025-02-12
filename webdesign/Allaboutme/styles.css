@@ -1,0 +1,40 @@
+.title {
+    color: green;
+}
+body{
+    background-color: black
+}
+h1{
+    color: red;
+    text-align: center;
+}
+p{
+    text-align: center;
+        color: white;
+}
+h2{
+    color: chartreuse;
+    text-align-last: center;
+}
+h3{
+    color: aqua;
+    font-size: 25px;
+}
+li{
+    color: white
+}
+h4{
+    color: dodgerblue;
+    font-size: 25px;
+    text-align-last: center;    
+}
+h5{
+    color: crimson;
+    font-size: 25px;
+}
+ul{
+    color: white;
+}
+a{
+    color: white
+}

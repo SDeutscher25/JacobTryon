@@ -1,0 +1,44 @@
+body{
+   background-image: url("v3.png");
+    height: 100%;
+      background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+li{
+    color: white;
+}
+p{
+    color: white;
+    font-family: monospace
+}
+td{
+    color: white;
+}
+th{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+h1{
+    color: white;
+    font-family: cursive;
+}
+
+h2{
+    color: white;
+     font-size: 30px;
+    font-family: fantasy
+}
+a:link{
+    color: red;
+    background-color: skyblue;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 16px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}

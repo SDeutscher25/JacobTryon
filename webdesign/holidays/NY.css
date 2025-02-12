@@ -1,0 +1,39 @@
+body{
+   background-image: url("NY.jpg");
+    height: 100%;
+      background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    color: palegoldenrod;
+    background-color: darkgoldenrod;
+    font-size: 20px;
+}
+h1{
+    color: darkgoldenrod;
+    font-size: 35px;
+    font-family: fantasy;
+}
+
+h2{
+    color: gold;
+    font-size: 30px;
+    font-family: cursive;
+}
+h3{
+    color: gold;
+    font-size: 30px;
+    font-family: cursive;
+}
+a:link{
+    color: goldenrod;
+    background-color: rgb(255, 232, 168);
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 16px;
+    font-family: monospace
+}

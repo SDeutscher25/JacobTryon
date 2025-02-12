@@ -1,0 +1,33 @@
+.title {
+    color: green;
+}
+#wheel{
+    border: 2px red solid;
+    Width: 500px;
+    height: 500px;
+    border-radius: 25%;
+}
+.cabin{
+    width: 100px; 
+    height: 100px;
+    top: 100px;
+    transform-origin: 350% center;
+    position: relative;
+    animation: rotate 8s linear infinite;
+}
+.cabin:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: blue;
+    /* animation: rotate 8s linear reverse infinte */
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+body{
+    background-color: cyan
+}

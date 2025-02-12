@@ -1,0 +1,39 @@
+body{
+   background-image: url("stp.jpeg");
+    height: 100%;
+      background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    color: green;
+    background-color: limegreen;
+    font-size: 20px;
+}
+h1{
+    color: darkgreen;
+    font-size: 35px;
+    font-family: monospace;
+    background-color: springgreen
+}
+
+h2{
+    color: lawngreen;
+    font-size: 30px;
+    font-family: cursive;
+}
+h3{
+    color: greenyellow;
+    font-size: 30px;
+    font-family: cursive;
+}
+a:link{
+    color: palegreen;
+    background-color: rgb(23, 155, 0);
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+    font-family: sans-serif;
+}
