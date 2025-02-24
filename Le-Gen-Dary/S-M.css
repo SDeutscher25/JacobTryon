@@ -1,0 +1,86 @@
+body{
+   background-image: url("t.png");
+    width: 75%;
+      background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    color: white;
+}
+.caphover {
+  border: 5px outset red;
+  background-color: lightblue;    
+    color: white;
+  text-align: center;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.Star-Lord {
+  border: 5px outset yellow;
+  background-color: #0000ff;   
+color: yellow;
+  text-align: center;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.spidermanhover {
+  border: 5px outset red;
+  background-color: #000000;    
+    color: white;
+  text-align: center;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.ironmanhover {
+  border: 5px outset red;
+  background-color: gold;    
+    color: white;
+  text-align: center;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.hhover {
+  border: 5px outset red;
+  background-color: red;    
+    color: white;
+  text-align: center;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 15px;
+}
+p{
+  color: red;
+  background-color: #000000;
+  font-family:fantasy
+}
+table{
+  color: white;
+  background-color: blue;
+  font-family: Arial, Helvetica, sans-serif
+}
+li{
+  color: blue;
+  background-color: white;
+font-family: monospace
+}
+h1{color: red;
+font-family: cursive;}
+h2{color: white;}
+h3{
+  color: #000000;
+  background-color: red
+}
+.sf {
+  border: 5px outset #000000;
+  background-color: red;    
+    color: white;
+  text-align: center;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 15px;
+}
