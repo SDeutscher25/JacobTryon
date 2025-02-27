@@ -1,0 +1,236 @@
+.title {
+    color: green;
+}
+:root {
+    height: 100%;
+}
+
+body {
+    background-color: #7d6eb3;
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+
+#ghastly {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#body {
+    background-color: #7d6eb3;
+    border-radius: 50%;
+    width: 365px;
+    height: 365px;
+    position: relative;
+    top: -180px;
+    left: -182.5px;
+    z-index: 4;
+}
+
+.leftEye {
+    background-color: #F1B2AC;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    z-index: 10;
+}
+
+.leftEyeBlock {
+    background-color: #7d6eb3;
+    width: 200px;
+    position: absolute;
+    top: -40px;
+    left: -14px;
+    z-index: 10;
+
+    transform: rotate(30deg);
+}
+
+.leftEyePupil {
+    background-color: #4c2854;
+    border-radius: 120%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 65px;
+    right: 62px;
+    z-index: 10;
+}
+
+.rightEye {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 85px;
+    right: 10px;
+    z-index: 9;
+}
+
+.rightEyeBlock {
+    background-color: #7d6eb3;
+    width: 200px;
+    position: absolute;
+    top: -40px;
+    right: -10px;
+    z-index: 11;
+
+    transform: rotate(-30deg);
+}
+
+.rightEyePupil {
+    background-color: #a4fff5;
+    border-radius: 120%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 65px;
+    right: 62px;
+    z-index: 10;
+}
+
+.mouth {
+    background-color: #ed779a;
+    border-radius: 50%;
+    width: 300px;
+    height: 236px;
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    z-index: 6;
+}
+
+.mouthBlock {
+    background-color: #7d6eb3;
+    border-radius: 50%;
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    top: -10px;
+    right: -25px;
+    z-index: 7;
+}
+
+.teethTop1 {
+    background-color: #7d6eb3;
+    width: 50px;
+    height: 16px;
+    position: absolute;
+    top: 140px;
+    right: 40px;
+    z-index: 10;
+
+    transform: rotate(25deg);
+}
+
+.teethTop2 {
+    background-color: #7d6eb3;
+    width: 50px;
+    height: 19px;
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    z-index: 10;
+    transform: rotate(-25deg);
+}
+
+.teethBottom1 {
+    background-color: #7d6eb3;
+    width: 30px;
+    height: 148px;
+    position: absolute;
+    top: 230px;
+    left: 60px;
+    z-index: 10;
+    transform: rotate(-20deg);
+}
+
+.teethBottom2 {
+    background-color: #7d6eb3;
+    width: 25px;
+    height: 203px;
+    position: absolute;
+    top: 230px;
+    right: 80px;
+    z-index: 10;
+    transform: rotate(20deg);
+}
+
+.teethBottom3 {
+    background-color: #7d6eb3;
+    width: 25px;
+    height: 128px;
+    position: absolute;
+    top: 240px;
+    right: 130px;
+    z-index: 10;
+    transform: rotate(45deg);
+}
+
+.teethBottom4 {
+    background-color: #7d6eb3;
+    width: 25px;
+    height: 132px;
+    position: absolute;
+    top: 240px;
+    right: 180px;
+    z-index: 10;
+    transform: rotate(50deg);
+}
+
+.teethBottom5 {
+    background-color: #7d6eb3;
+    width: 18px;
+    height: 30px;
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    z-index: 10;
+    transform: rotate(-20deg);
+}
+#hat{
+       background-color: #ff0000;
+    border-radius: 50%;
+    width: 365px;
+    height: 365px;
+    position: relative;
+    top: -182.5px;
+    left: -167.2px;
+    z-index: 4;
+}
+.hp1{
+      background-color: #ffffff;
+    width: 350px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    z-index: 11;
+}
+.hp2{
+      background-color: #ff0000;
+    width: 300px;
+    height: 100px;
+    border-radius: 20%;
+    position: absolute;
+    top: -25px;
+    left: 35px;
+    z-index: 10;
+}
+.hp3 {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -15px;
+    right: 135px;
+    z-index: 10;
+}
