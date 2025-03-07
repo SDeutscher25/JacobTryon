@@ -1,0 +1,85 @@
+body {
+    font-family:Georgia, ;
+    color:white;
+       background-image: url("s.jpg");
+    height: 100%;
+      background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin:10px;
+
+}
+
+h1 {
+    font-size:50px;
+    text-align:center;
+    color: white
+}
+
+h2 {
+    text-align:center;
+    
+}
+
+ul {
+    list-style-type:lower-roman ;
+    text-align:center;
+}
+
+
+nav li {
+    background-color:white;
+    margin: 35px;
+    display: inline-block;
+    padding: 25px;
+    border-radius:25% ;    
+}
+
+.photo img {
+    width: 200px;
+    border-radius:25% ;  
+}
+
+.thumbs img {
+    height: 135px;
+    border-radius: 25%;  
+}
+
+.droid {
+    background-color: grey;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    border: solid 5px;
+    border-color: white;
+    border-radius: 25%;
+
+}
+
+.droid .photo {
+    float: left;
+}
+
+.droid:nth-child(even) .photo {
+float: right;
+}
+
+.desc {
+    margin: 1;
+}
+
+.droid .thumbs {
+    display:-webkit-flex;
+}
+.copyrightNotice{
+    text-align: center;
+}
+p{
+    flex-wrap: wrap;
+}
+.caption{
+align-content: flex-end;
+justify-items: stretch;
+}
