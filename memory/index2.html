@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Planet Matching Game</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script2.js"></script>
+	<link rel="stylesheet" href="styles2.css">
+
+	<style>
+		body {
+			text-align: center;
+			background-image: url('space.jpg');
+			background-size: 50%;
+		}
+
+		h1 {
+			font-family: 'Sniglet', cursive;
+			color: lightslategray;
+			margin: 10px;
+		}
+
+		#game-wrapper {
+			margin: auto;
+			margin-top: 40px;
+			padding: 20px;
+			width: 770px;
+			background-color: #ffffff                          ;
+			border-radius: 20px;
+			border: 2px solid lightslategray;
+		}
+
+		.card {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			backface-visibility: hidden;
+		}
+
+		.card_front {
+			background-image: linear-gradient(purple, blue);
+		}
+
+		.card_back {
+			background: white;
+			transform: rotateY(180deg);
+		}
+
+		.card_back img {
+			width: 80px;
+			height: 80px;
+			margin-top: 10px;
+		}
+
+
+		.is-flipped {
+			transform: rotateY(180deg);
+		}
+
+		a {
+			font-family: 'Sniglet', cursive;
+			background-color: lightslategray;
+			display: block;
+			padding: 10px;
+			margin: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="index.html" style="display: inline-block">page 1</a>
+	<a href="index2.html" style="display: inline-block;">page 2</a>
+    <div id="game-wrapper">
+		<h1>Planet Matching Game</h1>
+		<div id="match-grid"></div>
+		<a onclick="start()">RESTART</a>
+	</div>
+
+	<script>
+		var images = ["Mercury.jpg", "Mars.png", "Neptune.jpg", "Pluto.jpg", "Earth.jpg", "Jupiter.png", "saturn.avif", "Uranus.jpg", "venus.webp", "sun.webp", "moon.jpg", "Titan.jpg", "IO.jpg"];
+		start();
+
+
+	</script>
+</body>
+
+</html>
