@@ -1,0 +1,56 @@
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #0a0a0a;
+margin: 0;
+overflow: hidden;
+}
+.scene {
+perspective: 800px;
+}
+.cube {
+position: relative;
+width: 100px;
+transform-style: preserve-3d;
+animation: rotate 5s infinite linear;
+}
+.cube div {
+position: absolute;
+width: 250px;
+height: 125px;
+background: rgb(255, 0, 0, 0.5);
+border: 2px solid cyan;
+box-shadow: 0 0 25px cyan;
+transition: 0.3s;
+}
+.cube:hover div {
+box-shadow: 0 0 25px cyan;
+}
+.front { transform: translateZ(125px); }
+.back { transform: rotateY(180deg) translateZ(125px); }
+.left { transform: rotateY(-90deg) translateZ(125px); }
+.right { transform: rotateY(90deg) translateZ(125px); }
+.top { transform: rotateX(54deg) translateZ(125px)}
+.top2 { transform: rotateX(126deg) translateZ(125px)}
+.bottom { transform: rotateX(-54deg) translateZ(125px); }
+.bottom2 { transform: rotateX(-126deg) translateZ(125px); }
+@keyframes rotate {
+0% { transform: rotateX(0) rotateY(0); }
+100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+a {
+    display: block;
+    background-color: cyan;
+    margin-left: -13%;
+    margin-right: 15%;
+    border: 2px solid rgb(255, 0, 0);
+    padding: 18px;
+    border-radius: 50px 20px;
+     font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+    
+}

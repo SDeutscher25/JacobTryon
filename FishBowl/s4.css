@@ -1,0 +1,382 @@
+.cartoon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cartoon div {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.b {
+  border: 1vmin solid black;
+}
+
+.r {
+  border-radius: 100%;
+}
+
+.hb::before,
+.ha::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+/****/
+.cartoon {
+  --skin: #FED41D;
+  --dark: #000000;
+  --hair: #FED41D;
+  --robe: #F14E28;
+  width: 80vmin;
+  height: 80vmin;
+}
+
+.cartoon::after {
+  width: 125%;
+  bottom: 0;
+  border-top: 1vmin solid black;
+  top: 109%;
+  left: 50%;
+  transform: translate(-50%, 25%);
+}
+
+.face {
+  left: 50%;
+  top: 2%;
+  background: var(--skin);
+  width: 60%;
+  height: 40%;
+  border-radius: 60% 60% 60% 60% / 50% 50% 30% 30%;
+  transform: translate(-50%, 0);
+}
+
+.glasses {
+  background-color: white;
+  width: 30%;
+  height: 45%;
+  top: 31%;
+  left: 12%;
+  z-index: 2
+}
+
+.glasses + .glasses {
+  left: auto;
+  right: 12%;
+}
+
+.glasses-bar {
+  width: -101%;
+  border-top: 1vmin solid black;
+  top: 63%;
+}
+
+.scarf {
+  width: 50%;
+  height: 25%;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 15% / 130% ;
+  background: linear-gradient(to right, #c00 50%, #fc6 0);
+  background-size: 50%;
+  background-position: -25% 0;
+}
+
+.scarf-2 {
+  width: 15%;
+  height: 26%;
+  top: 43%;
+  left: 28%;
+  background: linear-gradient(to bottom, #c00 50%, #fc6 0);
+  background-size: 100% 70%;
+}
+
+.eye {
+  width: 6%;
+  height: 9%;
+  top: 50%;
+  left: 30%;
+  background-color: black;
+  box-shadow: inset -0.5vmin -0.5vmin 0 1vmin black;
+  z-index: 2
+}
+
+.eye + .eye {
+  left: auto;
+  right: 20%;
+  z-index: 3
+}
+
+.mouth {
+  width: 50%;
+  height: 16%;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: translate(-50%, 0) rotate(8deg);
+  top: 76%;
+  left: 50%;
+}
+.mouth2 {
+  width: 19%;
+  height: 26%;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: translate(-35%, 0) rotate(-44deg);
+  top: 52%;
+  left: 45%;
+}
+.ear {
+  background: var(--skin);
+  width: 7%;
+  height: 7%;
+  top: 23%;
+  left: 16%;
+}
+
+.ear + .ear {
+  left: auto;
+  right: 16%;
+}
+
+.hair {
+  background: var(--hair);
+  top: -7%;
+  height: 20%;
+}
+
+.hair-1 {
+  top: -5%;
+  height: 21%;
+  left: 15%;
+  width: 15%;
+  border-radius: 80% 0 100% 0;
+  rotate: 154deg;
+  z-index: -1;
+}
+
+.hair-2 {
+  top: -6%;
+  height: 23%;
+  left: 25%;
+  width: 15%;
+  border-radius: 80% 0 100% 0;
+  rotate: 154deg;
+  z-index: -1;
+}
+
+
+.hair-3 {
+  top: -6%;
+  height: 23%;
+  left: 35%;
+  width: 15%;
+  border-radius: 80% 0 100% 0;
+  rotate: 154deg;
+  z-index: -1;
+}
+.hair-4 {
+  top: -6%;
+  height: 23%;
+  left: 45%;
+  width: 15%;
+  border-radius: 80% 0 100% 0;
+  rotate: 154deg;
+  z-index: -1;
+}
+.hair-5 {
+  top: -6%;
+  height: 23%;
+  left: 55%;
+  width: 15%;
+  border-radius: 80% 0 100% 0;
+  rotate: 154deg;
+  z-index: -1;
+}
+.hair-6 {
+  top: -6%;
+  height: 29%;
+  left: 66%;
+  width: 15%;
+  border-radius: 80% 0 100% 0;
+  rotate: 154deg;
+  z-index: -1;
+}
+.pant-7 {
+width: 50%;
+  height: 15%;
+  top: 70%;
+  left: 26%;
+  transform: rotate(180deg);
+  border-radius: 40% / 100% 100% 0 0;
+  background-color: #009DDC;
+  z-index: -1
+}
+
+
+.body {
+  width: 52%;
+  height: 40%;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 40% / 100% 100% 0 0;
+  background: var(--robe);
+}
+
+.arm {
+  top: 38%;
+  left: 35%;
+  height: 35%;
+  width: 40%;
+  transform: translate(-50%, 0) rotate(20deg);
+  border-radius: 100% 100% 40% 40% / 200% 200% 0 0;
+  background: var(--robe);
+  z-index: -1;
+}
+
+.arm + .arm {
+  left: auto;
+  right: 35%;
+  transform: translate(50%, 0) rotate(-20deg);
+}
+
+.hand {
+  width: 15%;
+  height: 15%;
+  top: 60%;
+  left: 10%;
+  background: var(--skin);
+  z-index: -2;
+}
+
+.hand + .hand {
+  left: 75%;
+}
+
+.wand {
+  width: 6%;
+  height: 75%;
+  border-radius: 3vmin 104% 100% 3vmin;
+  transform: rotate(90deg);
+  top: 64%;
+  right: 46%;
+  background-color: #b2ff0b;
+}
+.wheel{
+  background-color: #878787;
+  width: 10%;
+  height: 10%;
+  top: 100%;
+  left: 26%;
+border-radius: 50%;
+  z-index: -1;
+}
+
+.wheel2{  
+  background-color: #878787;
+  width: 10%;
+  height: 10%;
+  top: 100%;
+  left: 66%;
+border-radius: 50%;
+  z-index: -1;  }
+.wheeli{  
+  background-color: #dddddd;
+  width: 5%;
+  height: 5%;
+  top: 103%;
+  left: 208px;
+border-radius: 50%;
+  z-index: -1;  }
+.wheeli2{  
+  background-color: #dddddd;
+  width: 5%;
+  height: 5%;
+  top: 103%;
+  left: 504px;
+border-radius: 50%;
+  z-index: -1;  }
+
+
+.pants {
+  width: 18%;
+  height: 16%;
+  bottom: 6%;
+  left: 31%;
+   background: linear-gradient(to bottom, #009DDC 50%, #FED41D 0);
+  border-radius: 5% 3% 75px 74px / 1px 2px 50% 50%;
+  z-index: -1;
+}
+
+.pants + .pants {
+  left: auto;
+  right: 31%;
+}
+
+.shoe {
+  width: 28%;
+  left: 19.6%;
+  height: 9%;
+  bottom: 0;
+  border-radius: 200% 90% 0 5% / 400% 0 0 0;
+  background-color: #009DDC;
+}
+
+.shoe + .shoe {
+  left: auto;
+  right: 19.5%;
+  border-radius: 90% 200% 5% 0% / 0 400% 0 0;
+}
+
+.scar {
+ left: 49%;
+  top: -4%;
+  background-color: #FED41D;
+  width: 103%;
+  height: 51%;
+  border-radius: 132% 125% 70% 94%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+
+
+
+.hair-mess {
+  width: 7%;
+  height: 7%;
+  border: 1vmin solid transparent;
+  border-right: 1vmin solid black;
+  transform: rotate(-45deg);
+  top: -3%;
+  left:27.5%;
+}
+
+.hair-mess::after {
+  width: 150%;
+  height: 150%;
+  border: 1vmin solid transparent;
+  border-top: 1vmin solid black;
+  border-radius: 50%;
+  top: 50%;
+  top: calc(50% + 1vmin);
+  right: -140%;
+  right: calc(-140% - 0.5vmin);
+}
+a {
+    display: block;
+    background-color: #F14E28;
+    margin-left: 0%;
+    margin-right: 80%;
+    border: 3px solid #009DDC;
+    padding: 18px;
+    border-radius: 50px 20px;
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    
+}
