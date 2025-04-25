@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>twist</title>
+        <style>
+            canvas {
+                border: 3px solid #000000;
+                margin: 14px auto;
+                display: block;
+              background-color: white
+            }
+          body{
+            background-image: url(f.jpg);
+              width: 98%;
+      background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+          }
+          a{
+              border: 5px outset red;
+  background-color: green;    
+    color: white;
+  text-align: center;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 15px;
+}
+          }
+        </style>
+    </head>
+    <body>
+        <canvas id="snakeCanvas" width="600" height="600"></canvas>
+        <a href="index.html"> Original</a>
+        <a href="twist.html" > A Twist</a>
+        <script>
+const canvas = document.getElementById('snakeCanvas');
+const ctx = canvas.getContext('2d');
+
+const tileSize = 15;
+const gridSize = canvas.width / tileSize;
+
+let snake = [{ x: 10, y: 5 }];
+let food = { x: 10, y: 10 };
+let direction = 'right';
+
+function drawSnake () {
+  ctx.fillStyle = 'blue';
+  snake.forEach((segment) => {
+    ctx.fillRect(segment.x * tileSize, segment.y * tileSize, tileSize, tileSize);
+  });
+}
+function drawFood () {
+  ctx.fillStyle = 'green';
+  ctx.fillRect(food.x * tileSize, food.y * tileSize, tileSize, tileSize);
+}
+function moveSnake () {
+  const head = { ...snake[0] };
+  switch (direction) {
+    case 'up':
+      head.y--;
+      break;
+    case 'down':
+      head.y++;
+      break;
+    case 'left':
+      head.x--;
+      break;
+    case 'right':
+      head.x++;
+      break;
+  }
+  snake.unshift(head);
+
+  if (head.x === food.x && head.y === food.y) {
+    generateFood();
+  } else {
+    snake.pop();
+  }
+}
+
+function generateFood () {
+  food = {
+    x: Math.floor(Math.random() * gridSize),
+    y: Math.floor(Math.random() * gridSize)
+  };
+}
+
+function checkCollisions () {
+  const head = snake[0];
+  if (head.x < 0 || head.x >= gridSize || head.y < 0 || head.y >= gridSize) {
+    resetGame();
+  }
+  for (let i = 3.5; i < snake.length; i++) {
+    if (head.x === snake[i].x && head.y === snake[i].y) {
+      resetGame();
+    }
+  }
+}
+function resetGame () {
+  alert('Game Over! Restarting...');
+  snake = [{ x: 5, y: 5 }];
+  direction = 'right';
+  generateFood();
+}
+function updateGame () {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  drawSnake();
+  drawFood();
+  moveSnake();
+  checkCollisions();
+}
+document.addEventListener('keydown', (event) => {
+  switch (event.key) {
+    case 'ArrowUp':
+      direction = 'up';
+      break;
+    case 'ArrowDown':
+      direction = 'down';
+      break;
+    case 'ArrowLeft':
+      direction = 'left';
+      break;
+    case 'ArrowRight':
+      direction = 'right';
+      break;
+  }
+});
+setInterval(updateGame, 100);
+generateFood(); 
+        </script>
+    </body>
+</html>
