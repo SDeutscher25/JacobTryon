@@ -1,0 +1,51 @@
+.grid{
+    width: 33.3333333334%;
+    overflow-wrap: anywhere;
+    float: inline-start;
+    flex-wrap: wrap;
+    text-anchor: start;
+}
+.header{
+    display: block;
+    background-color: #cc0100;
+    width: 100%;
+    text-align-last: center;
+    height: 100px;
+    align-content: center;
+}
+h1{
+      font-family: "Rubik Burned", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    
+}
+h5{
+      font-family: "Tilt Prism", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+    text-align: left;
+    font-size: 13px;
+}
+h2{
+    font-size: 18.15px;
+     font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h3{
+    font-size:  22.5px;
+      font-family: "Love Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    background-color: #ed008e
+
+}
+img{
+ width: 9.59%
+}
