@@ -1,0 +1,9 @@
+h1{
+    text-align-last: center;
+}
+a{
+    padding: 10px;
+    background-color: red;
+    border: solid black;
+    display: inline-block;
+}
