@@ -1,0 +1,57 @@
+h1{
+    justify-self: center;
+}
+h2{
+    justify-self: center;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translatex(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.75s fadeInUp;
+}
+.party {
+  border: 5px outset red;
+  background-color: #00cccc;    
+    color: white;
+  text-align: center;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 15px;
+    
+}
+.page2 {
+  border: 5px outset yellow;
+  background-color: #000;   
+color: yellow;
+  text-align: center;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.site {
+  border: 5px outset red;
+  background-color: #000000;    
+    color: white;
+  text-align: center;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 15px;
+}
+.Recipe {
+  border: 5px outset red;
+  background-color: gold;    
+    color: white;
+  text-align: center;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 15px;
+}
